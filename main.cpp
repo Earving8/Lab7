@@ -20,8 +20,6 @@ int main(int argc, char** argv)
 	Test myTest;
 	myTest.runTests();
 
-	std::cout << "Running...\nAnd we're done.\nGoodbye.\n";
-
 	return (0);
 
 }
