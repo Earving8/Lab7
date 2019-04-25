@@ -5,12 +5,16 @@
 *	@brief tests linked list
 */
 
-#include "LinkedListOfInts"
+#include "LinkedListOfInts.h"
 #include "Test.h"
 #include <iostream>
 
 using namespace std;
 
-Test:Test(){
+Test::Test(){
 
+}
+
+void Test::runTests(){
+    
 }

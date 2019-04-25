@@ -8,14 +8,14 @@
 #ifndef TEST_H
 #define TEST_H
 
-#include "LinkedListOfInts"
+#include "LinkedListOfInts.h"
 
 class Test {
 private:
-    
+
 public:
     Test();
-
+    void runTests();
 };
 
 #endif
