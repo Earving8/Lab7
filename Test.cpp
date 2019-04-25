@@ -16,28 +16,28 @@ Test::Test(){
 }
 
 void Test::runTests(){
-    test01();
-    test02();
+    printResult(test01());
+    printResult(test02());
 }
 
 
-void Test::test01(){
+bool Test::test01(){
     LinkedListOfInts list;
     cout << "Test #1: isEmpty() returns true with an empty list     ";
-    if(list.isEmpty()){
-        cout << "PASSED\n";
-    }else{
-        cout << "FAILED\n";
-    }
+    return(list.isEmpty());
 }
 
-void Test::test02(){
+bool Test::test02(){
     LinkedListOfInts list;
     list.addFront(1);
-    cout << "Test #2: isEmpty() returns false with a filled list     ";
-    if(list.isEmpty()){
-        cout << "FAILED\n";
+    cout << "Test #2: isEmpty() returns false with a nonempty list     ";
+    return(!list.isEmpty());
+}
+
+void Test::printResult(bool success){
+    if(success){
+        cout << "Passed\n";
     }else{
-        cout << "PASSED\n";
+        cout << "Failed\n";
     }
 }
