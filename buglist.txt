@@ -1,0 +1,7 @@
+bug 1: isEmpty() always returns true
+bug 2: addBack() adds to list, but not at the back.
+bug 3: removeFront() doesn't remove on populated list, probably checks isEmpty() causing it to always return false.
+bug 4: removeBack() doesn't remove on populated list, probalby checks isEmpty() causing it to always return false.
+
+Possible Issues:
+isEmpty() is probably the source of all bugs, but there is no gaurentee that bugs 2,3,4 are still existant after fixing isEmpty().
