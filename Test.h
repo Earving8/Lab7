@@ -43,6 +43,7 @@ private:
     bool test26(); // search() returns true when element is at beginning of list
     bool test27(); // search() returns true when element is at end of list
     bool test28(); // search() returns false when element is not list
+    bool test29(); // search() returns false when list is empty
 
     
 
